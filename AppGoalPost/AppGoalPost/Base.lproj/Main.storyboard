@@ -42,7 +42,7 @@
                                         <rect key="frame" x="359" y="95.5" width="35" height="32"/>
                                         <state key="normal" image="addGoal"/>
                                         <connections>
-                                            <action selector="addGoalBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Is5-Z4-tot"/>
+                                            <action selector="addGoalBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4a-QX-4OB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -166,6 +166,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="goalTableView" destination="T9E-24-Os5" id="fAk-ZT-vmV"/>
                         <outlet property="tableView" destination="T9E-24-Os5" id="zHF-mt-8O5"/>
                     </connections>
                 </viewController>
