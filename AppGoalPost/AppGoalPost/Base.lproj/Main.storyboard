@@ -167,7 +167,6 @@
                     </view>
                     <connections>
                         <outlet property="goalTableView" destination="T9E-24-Os5" id="fAk-ZT-vmV"/>
-                        <outlet property="tableView" destination="T9E-24-Os5" id="zHF-mt-8O5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
