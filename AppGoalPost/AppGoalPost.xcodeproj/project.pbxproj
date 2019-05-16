@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A7073AF5228D53C2002A6DE3 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7073AF4228D53C2002A6DE3 /* UIViewControllerExt.swift */; };
+		A7073AF7228D598E002A6DE3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7073AF6228D598E002A6DE3 /* UIViewExtension.swift */; };
+		A7073AF9228D5D53002A6DE3 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7073AF8228D5D53002A6DE3 /* UIButtonExt.swift */; };
 		A70D8502228BA8AC00D70F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70D8501228BA8AC00D70F8F /* AppDelegate.swift */; };
 		A70D8507228BA8AC00D70F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70D8505228BA8AC00D70F8F /* Main.storyboard */; };
 		A70D850A228BA8AC00D70F8F /* AppGoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A70D8508228BA8AC00D70F8F /* AppGoalPost.xcdatamodeld */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		A7073AF4228D53C2002A6DE3 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		A7073AF6228D598E002A6DE3 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A7073AF8228D5D53002A6DE3 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 		A70D84FE228BA8AC00D70F8F /* AppGoalPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGoalPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70D8501228BA8AC00D70F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70D8506228BA8AC00D70F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A7073AF4228D53C2002A6DE3 /* UIViewControllerExt.swift */,
+				A7073AF6228D598E002A6DE3 /* UIViewExtension.swift */,
+				A7073AF8228D5D53002A6DE3 /* UIButtonExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				A70D8502228BA8AC00D70F8F /* AppDelegate.swift in Sources */,
 				A70D850A228BA8AC00D70F8F /* AppGoalPost.xcdatamodeld in Sources */,
 				A7073AF5228D53C2002A6DE3 /* UIViewControllerExt.swift in Sources */,
+				A7073AF7228D598E002A6DE3 /* UIViewExtension.swift in Sources */,
+				A7073AF9228D5D53002A6DE3 /* UIButtonExt.swift in Sources */,
 				A70D851E228BCECB00D70F8F /* GoalsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
