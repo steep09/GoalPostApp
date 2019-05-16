@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7073AF5228D53C2002A6DE3 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7073AF4228D53C2002A6DE3 /* UIViewControllerExt.swift */; };
 		A70D8502228BA8AC00D70F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70D8501228BA8AC00D70F8F /* AppDelegate.swift */; };
 		A70D8507228BA8AC00D70F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70D8505228BA8AC00D70F8F /* Main.storyboard */; };
 		A70D850A228BA8AC00D70F8F /* AppGoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A70D8508228BA8AC00D70F8F /* AppGoalPost.xcdatamodeld */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7073AF4228D53C2002A6DE3 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		A70D84FE228BA8AC00D70F8F /* AppGoalPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGoalPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70D8501228BA8AC00D70F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70D8506228BA8AC00D70F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,8 +64,8 @@
 		A70D8500228BA8AC00D70F8F /* AppGoalPost */ = {
 			isa = PBXGroup;
 			children = (
-				A79DCE29228C7BDC0034AE2B /* Enum */,
 				A70D851A228BA91400D70F8F /* Extensions */,
+				A79DCE29228C7BDC0034AE2B /* Enum */,
 				A70D8517228BA8E400D70F8F /* View */,
 				A70D8516228BA8DD00D70F8F /* Controller */,
 				A70D8501228BA8AC00D70F8F /* AppDelegate.swift */,
@@ -96,6 +98,7 @@
 		A70D851A228BA91400D70F8F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A7073AF4228D53C2002A6DE3 /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				A70D851C228BB70800D70F8F /* GoalCell.swift in Sources */,
 				A70D8502228BA8AC00D70F8F /* AppDelegate.swift in Sources */,
 				A70D850A228BA8AC00D70F8F /* AppGoalPost.xcdatamodeld in Sources */,
+				A7073AF5228D53C2002A6DE3 /* UIViewControllerExt.swift in Sources */,
 				A70D851E228BCECB00D70F8F /* GoalsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
