@@ -29,6 +29,11 @@ class GoalsVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fetchCoreDataObjects()
+        goalTableView.reloadData()
+    }
+    
+    func fetchCoreDataObjects() {
         self.fetch{ (complete) in
             if complete {
                 if goals.count >= 1 {
@@ -38,7 +43,6 @@ class GoalsVC: UIViewController {
                 }
             }
         }
-        goalTableView.reloadData()
     }
     
     @IBAction func addGoalBtnWasPressed(_ sender: Any) {
@@ -49,6 +53,18 @@ class GoalsVC: UIViewController {
 }
 
 extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func removeGoal(atIndexPath indexPath: IndexPath) {
+        guard let manageContext = appDelegate?.persistentContainer.viewContext else { return }
+        
+        manageContext.delete(goals[indexPath.row])
+        
+        do {
+            try manageContext.save()
+        } catch {
+            debugPrint("Could not remove: \(error.localizedDescription)")
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -65,6 +81,24 @@ extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+            self.removeGoal(atIndexPath: indexPath)
+            self.fetchCoreDataObjects()
+            self.goalTableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        
+        deleteAction.backgroundColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+        return [deleteAction]
+    }
     
 }
 
